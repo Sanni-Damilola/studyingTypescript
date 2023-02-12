@@ -119,5 +119,13 @@ class personClass {
 const createPerson1 = new personClass(2, "sanni");
 const createPerson2 = new personClass(4, "bola");
 
+// Generics: used to build reuseable components
 
-// Generics
+function getArray<T>(items: T[]): T[] {
+  return items;
+}
+
+let numArray = getArray<number>([1, 2, 3, 4]);
+let strArray = getArray<string>(["bola", "sanni", "ola"]);
+console.log(numArray);
+console.log(strArray);
