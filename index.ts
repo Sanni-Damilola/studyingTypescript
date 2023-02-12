@@ -48,7 +48,13 @@ type dataType = {
 }; // can also be used to set a data type of an object
 //              👇
 
-const User1: dataType = {  // using type
+const User1: dataType = {
+  // using type
   id: 4,
   name: "sanni",
 };
+
+// Type Assertion
+let cid: any = 1;
+let customerId = <number>cid;
+let customerId1 = cid as number;
