@@ -27,10 +27,17 @@ pid = "tola";
 
 // enum
 enum Direction1 {
-  Up,
-  Down,
-  Left,
-  Right,
-}
+  Up, // default: 0
+  Down, // 1
+  Left, // 2
+  Right, // 3
+} //  default value is 0 then the rest would be in acending order
 
-console.log(Direction1);
+// object
+const user: {
+  id: number;
+  name: string;
+} = {
+  id: 1,
+  name: "sanni",
+};
