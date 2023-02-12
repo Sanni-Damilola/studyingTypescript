@@ -36,8 +36,19 @@ enum Direction1 {
 // object
 const user: {
   id: number;
-  name: string;
+  name: string; // setting the type
 } = {
   id: 1,
+  name: "sanni",
+};
+
+type dataType = {
+  id: number;
+  name: string;
+}; // can also be used to set a data type of an object
+//          👇
+
+const User1: dataType = { //  
+  id: 4,
   name: "sanni",
 };
