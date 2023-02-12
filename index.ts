@@ -118,5 +118,6 @@ class personClass {
 
 const createPerson1 = new personClass(2, "sanni");
 const createPerson2 = new personClass(4, "bola");
-console.log(createPerson1.register());
-console.log(createPerson2);
+
+
+// Generics
