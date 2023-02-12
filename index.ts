@@ -93,7 +93,6 @@ let checkDiff2: difference = 233;
 
 // interface cantDo  = number | string  ❌❌❌ Error❕
 
-
 //  setting interface for functions
 interface mathFunc {
   (x: number, y: number): number;
@@ -101,3 +100,23 @@ interface mathFunc {
 
 const add: mathFunc = (x: number, y: number): number => x + y;
 const addSub: mathFunc = (x: number, y: number): number => x - y;
+
+// class
+class personClass {
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  } //  method within the class
+
+  register() {
+    return `${this.name} is now register`;
+  }
+}
+
+const createPerson1 = new personClass(2, "sanni");
+const createPerson2 = new personClass(4, "bola");
+console.log(createPerson1.register());
+console.log(createPerson2);
