@@ -92,3 +92,12 @@ let checkDiff1: difference = "sanni";
 let checkDiff2: difference = 233;
 
 // interface cantDo  = number | string  ❌❌❌ Error❕
+
+
+//  setting interface for functions
+interface mathFunc {
+  (x: number, y: number): number;
+}
+
+const add: mathFunc = (x: number, y: number): number => x + y;
+const addSub: mathFunc = (x: number, y: number): number => x - y;
