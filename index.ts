@@ -73,12 +73,14 @@ function log(message: string | number): void {
 interface user {
   id: number;
   name: string;
+  age?: number; // question mark makes it optional else it will always be need
 } // similar to type
 
 const User: user = {
   id: 1,
   name: "john",
 };
+User.id = 3;
 /* difference between and type
 type can accept unions
 interface can't accept unions 
@@ -86,9 +88,7 @@ interface can't accept unions
 */
 
 type difference = string | number;
-let checkDiff1 : difference = "sanni"
-let checkDiff2 : difference = 233
+let checkDiff1: difference = "sanni";
+let checkDiff2: difference = 233;
 
 // interface cantDo  = number | string  ❌❌❌ Error❕
-
-
