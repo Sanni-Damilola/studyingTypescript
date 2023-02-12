@@ -64,10 +64,18 @@ const addNumber = (x: number, y: number): number => {
   return x + y;
 };
 
-
 // void
 function log(message: string | number): void {
   console.log(message);
 }
 
 // interface
+interface user {
+  id: number;
+  name: string;
+}
+
+const User: user = {
+  id: 1,
+  name: "john",
+};
