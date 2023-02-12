@@ -64,6 +64,10 @@ const addNumber = (x: number, y: number): number => {
   return x + y;
 };
 
+
+// void
 function log(message: string | number): void {
   console.log(message);
 }
+
+// interface
