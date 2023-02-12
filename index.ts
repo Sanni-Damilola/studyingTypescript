@@ -80,7 +80,7 @@ const User: user = {
   id: 1,
   name: "john",
 };
-User.id = 3;
+
 /* difference between and type
 type can accept unions
 interface can't accept unions 
