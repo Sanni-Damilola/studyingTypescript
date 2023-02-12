@@ -58,3 +58,12 @@ const User1: dataType = {
 let cid: any = 1;
 let customerId = <number>cid;
 let customerId1 = cid as number;
+
+// functions
+const addNumber = (x: number, y: number): number => {
+  return x + y;
+};
+
+function log(message: string | number): void {
+  console.log(message);
+}
