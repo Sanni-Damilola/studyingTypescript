@@ -46,9 +46,9 @@ type dataType = {
   id: number;
   name: string;
 }; // can also be used to set a data type of an object
-//          👇
+//              👇
 
-const User1: dataType = { //  
+const User1: dataType = {  // using type
   id: 4,
   name: "sanni",
 };
