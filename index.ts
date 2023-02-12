@@ -85,4 +85,10 @@ interface can't accept unions
 👇👇
 */
 
+type difference = string | number;
+let checkDiff1 : difference = "sanni"
+let checkDiff2 : difference = 233
+
+// interface cantDo  = number | string  ❌❌❌ Error❕
+
 
