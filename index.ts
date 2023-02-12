@@ -73,9 +73,16 @@ function log(message: string | number): void {
 interface user {
   id: number;
   name: string;
-}
+} // similar to type
 
 const User: user = {
   id: 1,
   name: "john",
 };
+/* difference between and type
+type can accept unions
+interface can't accept unions 
+👇👇
+*/
+
+
