@@ -24,3 +24,13 @@ let pid: string | number;
 // 👇👇
 pid = 22;
 pid = "tola";
+
+// enum
+enum Direction1 {
+  Up,
+  Down,
+  Left,
+  Right,
+}
+
+console.log(Direction1);
