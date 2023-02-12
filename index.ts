@@ -9,3 +9,18 @@ let arr: any[] = [1, false, "string", { name: "tolu" }, ["cooking", "eating"]]; 
 
 // Tupple
 let person: [number, string, boolean] = [1, "sanni", true]; // setting the data type in the array in this paticular order depending on the types you set
+
+// Tuple Array
+let employee: [number, string][];
+// 👇👇
+employee = [
+  [1, "sanni"],
+  [2, "bola"],
+  [3, "tola"],
+];
+
+// union
+let pid: string | number;
+// 👇👇
+pid = 22;
+pid = "tola";
