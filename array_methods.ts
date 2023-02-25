@@ -61,5 +61,5 @@ const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
 let copywithin = fruits.copyWithin(4, 0);
 // console.log("copywithin", copywithin); ✔
 
-const every = data.every();
-console.log(every);
+// const every = data.every();
+// console.log(every);
