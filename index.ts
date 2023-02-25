@@ -127,5 +127,8 @@ function getArray<T>(items: T[]): T[] {
 
 let numArray = getArray<number>([1, 2, 3, 4]);
 let strArray = getArray<string>(["bola", "sanni", "ola"]);
-console.log(numArray);
-console.log(strArray);
+// console.log(numArray);
+// console.log(strArray);
+
+
+// repraticing array methods
