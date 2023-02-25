@@ -130,8 +130,42 @@ let strArray = getArray<string>(["bola", "sanni", "ola"]);
 // console.log(numArray);
 // console.log(strArray);
 
-
 // repraticing array methods
+
+
+/* 
+symbol
+copywithin
+entries 
+every 
+fill
+filter
+find 
+findindex 
+flat 
+flatMap 
+forEach 
+includes 
+indexOf 
+join 
+keys 
+lastindexOf
+map 
+pop
+push
+reduce
+reduceRight
+reverse
+shift
+slice
+some
+sort
+splice
+toLocalString
+toString
+unshift
+values
+*/
 
 const data = [
   {
@@ -156,3 +190,6 @@ const data = [
   },
 ];
 
+
+
+console.log(data.);
