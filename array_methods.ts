@@ -50,11 +50,13 @@ const data = [
     status: false,
   },
   {
-    name: "abu",
+    name: "anu",
     id: 4,
     status: true,
   },
 ];
 
-let copywithin = data.copyWithin();
-console.log(copywithin);
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
+
+let copywithin = fruits.copyWithin(4, 0);
+// console.log("copywithin", copywithin); ✔
