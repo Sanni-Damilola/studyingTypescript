@@ -2,7 +2,7 @@
 
 /* 
 copywithin
-entries 
+entries ??
 every 
 fill
 filter
@@ -61,6 +61,5 @@ const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
 let copywithin = fruits.copyWithin(4, 0);
 // console.log("copywithin", copywithin); ✔
 
-const entries = fruits.entries();
-console.log(entries);
-
+const every = data.every;
+console.log(every);
