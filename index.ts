@@ -132,3 +132,27 @@ let strArray = getArray<string>(["bola", "sanni", "ola"]);
 
 
 // repraticing array methods
+
+const data = [
+  {
+    name: "sanni",
+    id: 1,
+    status: true,
+  },
+  {
+    name: "bola",
+    id: 2,
+    status: false,
+  },
+  {
+    name: "lola",
+    id: 3,
+    status: false,
+  },
+  {
+    name: "abu",
+    id: 4,
+    status: true,
+  },
+];
+
