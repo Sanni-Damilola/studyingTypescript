@@ -76,7 +76,7 @@ for (const [index, element] of entries) {
 
 
 const every = data.every((person) => typeof person.id === "number"); 
-console.log(every);
+// console.log(every);
 /*
 ✔ {use to check the data type of a patcular
    element in an arr if yes it return true
@@ -108,7 +108,7 @@ const findIndex = data.findIndex((el) => {
 
 const checkFlat = [1, [2, [3, [4]]]];
 const flat = checkFlat.flat(Infinity);
-// console.log(flat);
+console.log(flat);
 /* 
 Returns a new array with all 
 sub-array elements {it use to break a nexted 
