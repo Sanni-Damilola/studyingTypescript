@@ -77,4 +77,4 @@ if (every === true) {
 }
 
 const fill = [1, 2, 4, 4];
-console.log(Array.);
+console.log(typeof fill);
