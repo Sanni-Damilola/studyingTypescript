@@ -88,9 +88,10 @@ for (let index = 1; index <= 10; index++) {
 const find = data.find((item, index, arr) => {
   return item.name === "bola";
 });
-console.log("find", find);
+// console.log("find", find);
 // console.log(data); // Returns the value of the first element in the array where predicate is true, and undefined otherwise
 
 const findIndex = data.findIndex((el) => {
-  retu (el.id === 3);
+  return el.id === 3;
 });
+console.log(findIndex); // Returns the index of the first element in the array where predicate is true, and -1 otherwise.
