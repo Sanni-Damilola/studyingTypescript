@@ -77,10 +77,18 @@ if (every === true) {
 }
 
 let emptyArr: any = [];
-const fill = emptyArr.fill(10);
-// console.log(fill);
+const fill = emptyArr.push("sanni");
+// console.log(fill); // Changes all array elements from start to end index to a static value and returns the modified array ✔
 
 for (let index = 1; index <= 10; index++) {
   emptyArr.push(index);
 }
-console.log(emptyArr.fill(0, 1));
+// console.log(emptyArr.fill("sanni", 4));
+
+const age = data.find(find)?.name;
+ function find = data.find(item) {
+  return item.name === "sanni";
+};
+console.log("find", find);
+// console.log(data);
+console.log(age);
