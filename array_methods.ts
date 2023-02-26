@@ -2,7 +2,7 @@
 
 /* 
 copywithin
-entries ??
+entries 
 every 
 fill
 filter
@@ -57,12 +57,15 @@ const data = [
 ];
 
 const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 let copywithin = fruits.copyWithin(4, 0);
 // console.log("copywithin", copywithin); ✔
 
 const entries = fruits.entries();
-// for (const [index, element] of entries) {
-//   console.log(index, element);
-// }
-console.log(entries.next().value); // Returns an iterable of key, value pairs for every entry in the array
+for (const [index, element] of entries) {
+  // console.log(index, element);
+}
+console.log(entries.next().value); // Returns an iterable of key, value pairs for every entry in the array ✔
+
+const every = fruits.every();
