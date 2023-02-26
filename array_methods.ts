@@ -60,7 +60,13 @@ const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 let copywithin = fruits.copyWithin(1, 3);
-// console.log("copywithin", copywithin); // ✔  target the index postion of the second argument and replace it with the index position of the first argument
+// console.log("copywithin", copywithin);
+
+/*
+✔  target the index postion of the second
+ argument and replace it with the index 
+ position of the first argument
+*/
 
 const entries = fruits.entries();
 for (const [index, element] of entries) {
@@ -68,8 +74,17 @@ for (const [index, element] of entries) {
 }
 // console.log(fruits.entries().next().done); // Returns an iterable of key, value pairs for every entry in the array ✔
 
-const every = data.every((person) => typeof person.id === "number"); // {use to check the data type of a patcular element in an arr if yes it return true else it will return false } Determines whether all the members of an array satisfy the specified test if yes it return true else it will return false .
+
+const every = data.every((person) => typeof person.id === "number"); 
 console.log(every);
+/*
+✔ {use to check the data type of a patcular
+   element in an arr if yes it return true
+    else it will return false } Determines
+ whether all the members of an array satisfy
+  the specified test if yes it 
+  return true else it will return false .
+*/
 
 let emptyArr: any = [];
 const fill = emptyArr.push("sanni");
@@ -107,3 +122,5 @@ sub-array elements {it use to break a nexted
    keyword: {Infinity}} otherwise
     define the number of breaks: (depth) }
 */
+
+
