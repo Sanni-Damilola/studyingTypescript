@@ -90,3 +90,7 @@ const find = data.find((item, index, arr) => {
 });
 console.log("find", find);
 // console.log(data); // Returns the value of the first element in the array where predicate is true, and undefined otherwise
+
+const findIndex = data.findIndex((el) => {
+  retu (el.id === 3);
+});
