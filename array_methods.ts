@@ -66,6 +66,6 @@ const entries = fruits.entries();
 for (const [index, element] of entries) {
   // console.log(index, element);
 }
-console.log(entries.next().value); // Returns an iterable of key, value pairs for every entry in the array ✔
+// console.log(entries.next().value); // Returns an iterable of key, value pairs for every entry in the array ✔
 
 const every = fruits.every();
