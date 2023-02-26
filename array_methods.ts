@@ -93,4 +93,17 @@ const findIndex = data.findIndex((el) => {
 
 const checkFlat = [1, [2, [3, [4]]]];
 const flat = checkFlat.flat(Infinity);
-// console.log(flat); // Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+// console.log(flat);
+/* 
+Returns a new array with all 
+sub-array elements {it use to break a nexted 
+  array into sub-array and return all element 
+  in one array, the first first parameter is 
+  called depth: it is use to define the number 
+  of break you want..the defalut depth 
+  is 1 i.e if you don't put any paramiter
+   it gonna break the array only ones...
+  else if you want an infinite break use the
+   keyword: {Infinity}} otherwise
+    define the number of breaks: (depth) }
+*/
