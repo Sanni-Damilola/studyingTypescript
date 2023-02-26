@@ -98,8 +98,8 @@ const flat = checkFlat.flat(Infinity);
 Returns a new array with all 
 sub-array elements {it use to break a nexted 
   array into sub-array and return all element 
-  in one array, the first first parameter is 
-  called depth: it is use to define the number 
+  in one array, the parameter is 
+  called {depth} it must be a number: it is use to define the number 
   of break you want..the defalut depth 
   is 1 i.e if you don't put any paramiter
    it gonna break the array only ones...
