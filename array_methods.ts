@@ -68,13 +68,8 @@ for (const [index, element] of entries) {
 }
 // console.log(fruits.entries().next().done); // Returns an iterable of key, value pairs for every entry in the array ✔
 
-const every = data.every((person) => typeof person.id === "string"); // Determines whether all the members of an array satisfy the specified test.
-// console.log(every);
-if (every === true) {
-  // console.log(data);
-} else {
-  // console.log("no");
-}
+const every = data.every((person) => typeof person.id === "number"); // {use to check the data type of a patcular element in an arr if yes it return true else it will return false } Determines whether all the members of an array satisfy the specified test if yes it return true else it will return false .
+console.log(every);
 
 let emptyArr: any = [];
 const fill = emptyArr.push("sanni");
