@@ -59,14 +59,14 @@ const data = [
 const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-let copywithin = fruits.copyWithin(4, 0);
-// console.log("copywithin", copywithin); ✔
+let copywithin = fruits.copyWithin(1, 3);
+// console.log("copywithin", copywithin); // ✔  target the index postion of the second argument and replace it with the index position of the first argument
 
 const entries = fruits.entries();
 for (const [index, element] of entries) {
   // console.log(index, element);
 }
-// console.log(entries.next().value); // Returns an iterable of key, value pairs for every entry in the array ✔
+// console.log(fruits.entries().next().done); // Returns an iterable of key, value pairs for every entry in the array ✔
 
 const every = data.every((person) => typeof person.id === "string"); // Determines whether all the members of an array satisfy the specified test.
 // console.log(every);
