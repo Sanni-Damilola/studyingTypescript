@@ -69,9 +69,12 @@ for (const [index, element] of entries) {
 // console.log(entries.next().value); // Returns an iterable of key, value pairs for every entry in the array ✔
 
 const every = data.every((person) => typeof person.id === "string"); // Determines whether all the members of an array satisfy the specified test.
-console.log(every);
+// console.log(every);
 if (every === true) {
-  console.log(data);
+  // console.log(data);
 } else {
-  console.log("no");
+  // console.log("no");
 }
+
+const fill = [1, 2, 4, 4];
+console.log(Array.);
