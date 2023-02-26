@@ -83,4 +83,4 @@ const fill = emptyArr.fill(10);
 for (let index = 1; index <= 10; index++) {
   emptyArr.push(index);
 }
-console.log(emp);
+console.log(emptyArr.fill(0, 1));
