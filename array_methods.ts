@@ -76,5 +76,11 @@ if (every === true) {
   // console.log("no");
 }
 
-const fill = [1, 2, 4, 4];
-console.log(typeof fill);
+let emptyArr: any = [];
+const fill = emptyArr.fill(10);
+// console.log(fill);
+
+for (let index = 1; index <= 10; index++) {
+  emptyArr.push(index);
+}
+console.log(emp);
