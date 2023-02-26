@@ -61,5 +61,8 @@ const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
 let copywithin = fruits.copyWithin(4, 0);
 // console.log("copywithin", copywithin); ✔
 
-// const every = data.every();
-// console.log(every);
+const entries = fruits.entries();
+// for (const [index, element] of entries) {
+//   console.log(index, element);
+// }
+console.log(entries.next().value); // Returns an iterable of key, value pairs for every entry in the array
