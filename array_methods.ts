@@ -85,10 +85,8 @@ for (let index = 1; index <= 10; index++) {
 }
 // console.log(emptyArr.fill("sanni", 4));
 
-const age = data.find(find)?.name;
- function find = data.find(item) {
-  return item.name === "sanni";
-};
+const find = data.find((item, index, arr) => {
+  return item.name === "bola";
+});
 console.log("find", find);
-// console.log(data);
-console.log(age);
+// console.log(data); // Returns the value of the first element in the array where predicate is true, and undefined otherwise
