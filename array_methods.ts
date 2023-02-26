@@ -94,4 +94,8 @@ const find = data.find((item, index, arr) => {
 const findIndex = data.findIndex((el) => {
   return el.id === 3;
 });
-console.log(findIndex); // Returns the index of the first element in the array where predicate is true, and -1 otherwise.
+// console.log(findIndex); // Returns the index of the first element in the array where predicate is true, and -1 otherwise.
+
+const checkFlat = [1, [2, [3, [4]]]];
+const flat = checkFlat.flat(Infinity);
+// console.log(flat); // Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
