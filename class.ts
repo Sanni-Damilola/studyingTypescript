@@ -45,4 +45,23 @@ class Person4 {
   }
 }
 const person4 = new Person4("Jane");
-console.log(person4.getName());
+// console.log(person4.getName());
+
+interface Shape {
+  getArea: () => number;
+}
+
+class Rectangle implements Shape {
+  public constructor(
+    protected readonly width: number,
+    protected readonly height: number
+  ) {}
+
+  public getArea(): number {
+    return this.width * this.height;
+  }
+}
+
+const myRect = new Rectangle(30, 20);
+
+// console.log(myRect.getArea());
