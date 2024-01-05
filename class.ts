@@ -65,3 +65,12 @@ class Rectangle implements Shape {
 const myRect = new Rectangle(30, 20);
 
 // console.log(myRect.getArea());
+
+class Square extends Rectangle {
+  public constructor(width: number) {
+    super(width, width);
+  }
+}
+const mySq = new Square(20);
+
+console.log(mySq.getArea());
