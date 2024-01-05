@@ -31,4 +31,16 @@ class Person3 {
 }
 
 const person3 = new Person3("Bola");
-console.log(person3.getName());
+// console.log(person3.getName());
+
+class Person4 {
+  private readonly name: string;
+
+  public constructor(name: string) {
+    this.name = name;
+  }
+
+  public getName(): string {
+    return this.name;
+  }
+}
