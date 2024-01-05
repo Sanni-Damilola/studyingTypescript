@@ -44,3 +44,5 @@ class Person4 {
     return this.name;
   }
 }
+const person4 = new Person4("Jane");
+console.log(person4.getName());
