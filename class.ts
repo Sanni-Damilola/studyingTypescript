@@ -21,3 +21,14 @@ class Person1 {
 
 const person1 = new Person1("Jane");
 // console.log(person1);
+
+class Person3 {
+  public constructor(private name: string) {}
+
+  public getName(): string {
+    return this.name;
+  }
+}
+
+const person3 = new Person3("Bola");
+console.log(person3.getName());
