@@ -73,4 +73,31 @@ class Square extends Rectangle {
 }
 const mySq = new Square(20);
 
-console.log(mySq.getArea());
+// console.log(mySq.getArea());
+
+enum HTTPCODES {
+  OK = 200,
+  CREATED = 201,
+  ACCEPTED = 202,
+  REDIRECTED = 300,
+  BAD_REQUEST = 400,
+  UNAUTHORIZED = 401,
+  UNPROCESSABLE_IDENTITY = 422,
+  CONFLICT = 409,
+  FORBIDDEN = 403,
+  NOT_FOUND = 404,
+  NOT_ACCEPTED = 406,
+  INTERNAL_SERVER_ERROR = 500,
+  BAD_GATEWAY = 502,
+  SERVICE_UNAVAILABLE = 503,
+  GATEWAY_TIMEOUT = 508,
+  NETWORK_TIMEOUT = 599,
+}
+
+class MyError extends Error {
+  // Constructor for MyError class
+  constructor(public status: HTTPCODES, message: string) {
+    super(message);
+    this.name = this.constructor.name;
+  }
+}
