@@ -95,9 +95,14 @@ enum HTTPCODES {
 }
 
 class MyError extends Error {
-  // Constructor for MyError class
   constructor(public status: HTTPCODES, message: string) {
     super(message);
     this.name = this.constructor.name;
+  }
+}
+
+function errorCheck(params: string) {
+  if (typeof params === "number") {
+    throw new MyError(HTTPCODES.FORBIDDEN, "");
   }
 }
