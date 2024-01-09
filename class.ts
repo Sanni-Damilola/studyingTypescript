@@ -102,7 +102,7 @@ class MyError extends Error {
 }
 
 function errorCheck(params: string) {
-  if (typeof params === "number") {
-    throw new MyError(HTTPCODES.FORBIDDEN, "");
+  if (typeof params !== "string") {
+    throw new MyError(HTTPCODES.FORBIDDEN, `${params} must be a Text`);
   }
 }
