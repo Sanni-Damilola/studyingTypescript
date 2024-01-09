@@ -101,8 +101,21 @@ class MyError extends Error {
   }
 }
 
-function errorCheck(params: string) {
+function errorCheck(params: unknown): string {
   if (typeof params !== "string") {
-    throw new MyError(HTTPCODES.FORBIDDEN, `${params} must be a Text`);
+    throw new MyError(HTTPCODES.FORBIDDEN, `${params} must be a string`);
+  } else {
+    return "Pass";
+  }
+}
+
+try {
+  const result = errorCheck(2);
+  console.log(result);
+} catch (error) {
+  if (error instanceof MyError) {
+    console.error(`${error.name}: ${error.message} (Status Code: ${error.status})`);
+  } else {
+    console.error(error);
   }
 }
