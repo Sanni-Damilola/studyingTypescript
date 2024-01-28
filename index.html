@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stripe Bank Account Token</title>
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <div id="bank-account-element"></div>
+
+    <button type="button" id="submit-button">Submit</button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var stripe = Stripe(
+          "pk_test_51OEidNDiduEsRcJLRRVSADEzjeoLmFMuA6LIKTDoUZPHdwi0IEBTk3ZwUiE5wPgMjgrvdO1J4JiTN4aUuqYCUG0u00m2CvQi0L"
+        );
+        var elements = stripe.elements();
+
+        var bankAccountElement = elements.create("fpxBank", {
+          currency: "usd",
+          accountHolderType: "individual",
+        });
+
+        bankAccountElement.mount("#bank-account-element");
+
+        var submitButton = document.getElementById("submit-button");
+
+        submitButton.addEventListener("click", function () {
+          console.log("Submit button clicked");
+
+          stripe
+            .createPaymentMethod({
+              type: "fpx",
+              fpx: bankAccountElement,
+              billing_details: {
+                name: "Test User",
+              },
+            })
+            .then(function (result) {
+              console.log("Stripe.createPaymentMethod result:", result);
+
+              if (result.error) {
+                console.error(result.error.message);
+              } else {
+                var paymentMethod = result.paymentMethod.id;
+
+                console.log("Payment Method:", paymentMethod);
+              }
+            });
+        });
+      });
+    </script>
+  </body>
+</html>

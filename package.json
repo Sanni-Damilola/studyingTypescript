@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec ts-node ./class.ts"
+    "start": "nodemon --exec ts-node ./hack.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "selenium-webdriver": "^4.17.0",
     "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/selenium-webdriver": "^4.1.21"
   }
 }
